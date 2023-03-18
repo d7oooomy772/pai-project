@@ -6,9 +6,14 @@ class SettingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Image.asset(
-        'images/profile.png',
-        fit: BoxFit.fill,
+      body: Container(
+        width: double.infinity,
+        child: Center(
+          child: Image.asset(
+            'images/profile.png',
+            fit: BoxFit.fill,
+          ),
+        ),
       ),
     );
   }

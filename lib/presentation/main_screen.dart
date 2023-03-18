@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pai_project/controller/navigation_cubit.dart';
+import 'package:pai_project/core/utils/constants.dart';
 import 'package:pai_project/presentation/shared/named_nav_bar_item_widget.dart';
-
-import '../core/utils/constants.dart';
 
 class MainScreen extends StatelessWidget {
   final Widget screen;
@@ -14,17 +13,17 @@ class MainScreen extends StatelessWidget {
   final tabs = [
     NamedNavigationBarItemWidget(
       initialLocation: Routes.homeNamedPage,
-      icon: const Icon(Icons.home),
+      icon: const Icon(Icons.chat),
       label: 'Home',
     ),
     NamedNavigationBarItemWidget(
       initialLocation: Routes.profileNamedPage,
-      icon: const Icon(Icons.person),
+      icon: const Icon(Icons.leaderboard),
       label: 'Profile',
     ),
     NamedNavigationBarItemWidget(
       initialLocation: Routes.settingsNamedPage,
-      icon: const Icon(Icons.settings),
+      icon: const Icon(Icons.person),
       label: 'Setting',
     ),
   ];

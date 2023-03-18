@@ -13,7 +13,9 @@ class langpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Center(child: Image.asset('images/logo.png')),
+      ),
       body: Container(
         width: 390,
         height: 844,
