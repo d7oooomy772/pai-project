@@ -27,7 +27,7 @@ class ChatPage extends StatefulWidget {
 }
 
 Future<String> generateResponse(String prompt) async {
-  const apiKey = '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';
+  const apiKey = 'api key';
 
   var url = Uri.https("api.openai.com", "/v1/completions");
   var body = {
@@ -227,8 +227,7 @@ class ChatMessageWidget extends StatelessWidget {
                   margin: const EdgeInsets.only(right: 16.0),
                   child: CircleAvatar(
                     child: Image.asset(
-                      'assets/7309682.png',
-                      color: Colors.white,
+                      'images/c1.png',
                       scale: 1.5,
                     ),
                   ),
